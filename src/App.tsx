@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import Mentor from './pages/mentor/Mentor'
 
 // Students
 import type { JSX } from 'react'
 import Farid from './pages/farid/homepage'
 import Fozil from './pages/fozil/homepage'
+import Mentor from './pages/mentor/Mentor'
 import Ozodbek from './pages/ozodbek/homepage'
 
 const App = (): JSX.Element => {
