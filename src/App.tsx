@@ -4,7 +4,7 @@ import Mentor from './pages/mentor/Mentor'
 
 // Students
 import type { JSX } from 'react'
-import Farid from './pages/farid/homepage'
+import Farid from './pages/farid/Farid'
 import Fozil from './pages/fozil/homepage'
 import Ozodbek from './pages/ozodbek/homepage'
 
