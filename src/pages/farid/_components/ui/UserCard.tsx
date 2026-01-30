@@ -18,6 +18,7 @@ function iusercard({ firstname, lastname, age, phone, email, isStudent, imageUrl
 				<h2>{phone}</h2>
 				<h2>{email}</h2>
 				<h2>{isStudent}</h2>
+				<h2>{imageUrl}</h2>
 				<IUserbutton name='send message' color='blue-500' hovercolor='blue-700' />
 
 			</div>
