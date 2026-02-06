@@ -1,3 +1,4 @@
+import { ArrowBigRight } from 'lucide-react'
 import { useEffect, type JSX } from 'react'
 import { Link } from 'react-router-dom'
 import StudentButton from '../components/StudentButton'
@@ -10,8 +11,10 @@ const Home = (): JSX.Element => {
 		<div style={{ padding: 40 }}>
 			<h1 className='text-green-500'>Mentor React Platform</h1>
 
-			<Link to='/mentor'>
-				<button>Mentor</button>
+			<Link to='/mentor' >
+				<button className='py-2 px-4 bg-green-500 rounded-xl flex text-gray-600 font-bold '>
+					🧑🏻‍🏫 Mentor <ArrowBigRight fill='black' />
+				</button>
 			</Link>
 
 			<hr className='' />

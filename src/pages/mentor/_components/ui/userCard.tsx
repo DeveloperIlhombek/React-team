@@ -4,6 +4,7 @@
 // }
 
 import { Mail, Phone } from 'lucide-react'
+import LikeDisplay from '../LikeDisplay'
 
 interface ICard {
 	firstname: string
@@ -27,8 +28,8 @@ function UserCard({
 	const isMentor = isStudent === 'Mentor'
 
 	return (
-		<div className='max-w-sm mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300'>
-			<div className='relative'>
+		<div className='max-w-sm mx-auto  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300'>
+			<div className='relative '>
 				{/* Background gradient based on role */}
 				<div
 					className={`h-2 ${isMentor ? 'bg-linear-to-r from-blue-500 to-purple-600' : 'bg-linear-to-r from-green-400 to-teal-500'}`}
@@ -107,6 +108,9 @@ function UserCard({
 						View Profile
 					</button>
 				</div>
+			</div>
+			<div className='flex flex-col justify-center items-center px-6 pb-6'>
+				<LikeDisplay />
 			</div>
 		</div>
 	)

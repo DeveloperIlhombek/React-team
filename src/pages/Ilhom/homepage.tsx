@@ -1,11 +1,8 @@
-import './style/style.css'
+import UserCard from '../mentor/_components/ui/userCard'
 
-import UserCard from './_components/ui/userCard'
-
-const Mentor = () => {
-	return (
-		<>
-			<main className='bg-radial from-slate-300 to-slate-500 min-h-screen  p-12'>
+const Ilhom = () => {
+	return <>
+		<main className='bg-radial from-slate-300 to-slate-500 min-h-screen container p-12'>
 				<UserCard
 					age={25}
 					email='ilxomdeveloper@gmail.com'
@@ -17,8 +14,7 @@ const Mentor = () => {
 					isStudent='Student'
 				/>
 			</main>
-		</>
-	)
+	</>
 }
 
-export default Mentor
+export default Ilhom
