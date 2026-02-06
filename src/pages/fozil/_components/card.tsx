@@ -97,7 +97,7 @@ function Iusercard({
 						Send Message
 					</button>
 					<button className='flex-1 py-3 px-4 border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition-colors'>
-						<a href="https://t.me/erkinovfoziljon2011">Viev in Telegram</a>
+						<a href='https://t.me/erkinovfoziljon2011'>Viev in Telegram</a>
 					</button>
 				</div>
 			</div>
@@ -105,4 +105,4 @@ function Iusercard({
 	)
 }
 
-export default UserCard
+export default Iusercard
