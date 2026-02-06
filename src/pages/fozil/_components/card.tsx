@@ -1,8 +1,3 @@
-// const enum kasb {
-// 	mentor = 'Mentor',
-// 	student = 'Student',
-// }
-
 import { Mail, Phone } from 'lucide-react'
 
 interface ICard {
@@ -14,8 +9,7 @@ interface ICard {
 	isStudent: 'Mentor' | 'Student'
 	imageUrl: string
 }
-
-function UserCard({
+function Iusercard({
 	age,
 	firstname,
 	imageUrl,
@@ -25,13 +19,12 @@ function UserCard({
 	isStudent,
 }: ICard) {
 	const isMentor = isStudent === 'Mentor'
-
 	return (
 		<div className='max-w-sm mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300'>
 			<div className='relative'>
 				{/* Background gradient based on role */}
 				<div
-					className={`h-2 ${isMentor ? 'bg-linear-to-r from-blue-500 to-purple-600' : 'bg-linear-to-r from-green-400 to-teal-500'}`}
+					className={`h-2 ${isMentor ? 'bg-linear-to-r from-blue-500 to-purple-600' : 'bg-linear-to-r from-yellow-400 to-green-500'}`}
 				></div>
 
 				{/* Profile image and basic info */}
@@ -104,7 +97,7 @@ function UserCard({
 						Send Message
 					</button>
 					<button className='flex-1 py-3 px-4 border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition-colors'>
-						View Profile
+						<a href="https://t.me/erkinovfoziljon2011">Viev in Telegram</a>
 					</button>
 				</div>
 			</div>
